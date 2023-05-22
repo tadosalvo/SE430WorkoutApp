@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A5473"
+    tools:context=".WorkoutProgram">
+
+  <TextView
+      android:id="@+id/WorkoutProgramText"
+      android:layout_width="341dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="48dp"
+      android:background="@android:color/holo_green_light"
+      android:includeFontPadding="false"
+      android:paddingTop="20dp"
+      android:text="Workout Program"
+      android:textAlignment="center"
+      android:textColor="#0D47A1"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/encyclopediaButton2"
+      android:layout_width="85dp"
+      android:layout_height="57dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="16dp"
+      android:backgroundTint="#209C9C"
+      android:text="Encyclopedia"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/dietPlanButton2" />
+
+  <Button
+      android:id="@+id/homeButton2"
+      android:layout_width="85dp"
+      android:layout_height="57dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginBottom="16dp"
+      android:backgroundTint="#209C9C"
+      android:text="Home"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/workoutProgramButton2"
+      android:layout_width="87dp"
+      android:layout_height="55dp"
+      android:layout_marginStart="7dp"
+      android:layout_marginBottom="16dp"
+      android:backgroundTint="#209C9C"
+      android:text="Workout Program"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/homeButton2" />
+
+  <Button
+      android:id="@+id/dietPlanButton2"
+      android:layout_width="85dp"
+      android:layout_height="57dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginBottom="16dp"
+      android:backgroundTint="#209C9C"
+      android:text="Diet Plan"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/workoutProgramButton2" />
+
+  <Button
+      android:id="@+id/lowerBodyButton"
+      android:layout_width="156dp"
+      android:layout_height="74dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginBottom="428dp"
+      android:backgroundTint="#209C9C"
+      android:text="Lower Body"
+      android:textColor="@color/white"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/upperBodyButton"
+      android:layout_width="163dp"
+      android:layout_height="75dp"
+      android:layout_marginStart="212dp"
+      android:layout_marginBottom="428dp"
+      android:backgroundTint="#209C9C"
+      android:text="Upper Body"
+      android:textColor="@color/white"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/coreStrengthButton"
+      android:layout_width="163dp"
+      android:layout_height="81dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginBottom="304dp"
+      android:backgroundTint="#209C9C"
+      android:text="Core Strength"
+      android:textColor="@color/white"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/cardioButton"
+      android:layout_width="164dp"
+      android:layout_height="80dp"
+      android:layout_marginStart="212dp"
+      android:layout_marginBottom="304dp"
+      android:backgroundTint="#209C9C"
+      android:text="Cardio"
+      android:textColor="@color/white"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
