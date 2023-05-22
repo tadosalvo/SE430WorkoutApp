@@ -7,29 +7,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class HomeActivity extends AppCompatActivity {
+public class EncylopediaActivity extends AppCompatActivity {
 
-
-    private Button workoutButton;
+    private Button homeButton;
     private Button dietButton;
-    private Button encyclopediaButton;
-
+    private Button workoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_encylopedia);
+
+        homeButton = (Button) findViewById(R.id.homeButton4);
+        dietButton = (Button) findViewById(R.id.dietPlanButton4);
+        workoutButton = (Button) findViewById(R.id.workoutProgramButton4);
 
 
-        workoutButton = (Button) findViewById(R.id.workoutProgramButton);
-        dietButton = (Button) findViewById(R.id.dietPlanButton);
-        encyclopediaButton = (Button) findViewById(R.id.encyclopediaButton);
-
-
-        workoutButton.setOnClickListener(new View.OnClickListener() {
+        homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openWorkoutActivity();
+                openHomeActivity();
             }
         });
 
@@ -40,10 +37,10 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        encyclopediaButton.setOnClickListener(new View.OnClickListener() {
+        workoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openEncyclopediaActivity();
+                openWorkoutActivity();
             }
         });
 
@@ -51,18 +48,19 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
-    public void openWorkoutActivity() {
-        Intent intent = new Intent(this, WorkoutActivity.class);
+    public void openHomeActivity() {
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
+
     public void openDietActivity() {
         Intent intent = new Intent(this, DietActivity.class);
         startActivity(intent);
     }
-    public void openEncyclopediaActivity() {
-        Intent intent = new Intent(this, EncylopediaActivity.class);
+
+    public void openWorkoutActivity() {
+        Intent intent = new Intent(this, WorkoutActivity.class);
         startActivity(intent);
     }
-
 
 }
