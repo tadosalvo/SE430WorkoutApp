@@ -13,6 +13,13 @@
         android:theme="@style/Theme.SE430Project"
         tools:targetApi="31">
         <activity
+            android:name=".EncylopediaActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".DietActivity"
             android:exported="false">
             <meta-data

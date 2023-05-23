@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A5473"
+    tools:context=".EncylopediaActivity">
+
+    <TextView
+        android:id="@+id/EncyclopediaText"
+        android:layout_width="341dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/holo_green_light"
+        android:includeFontPadding="false"
+        android:paddingTop="20dp"
+        android:text="Encyclopedia"
+        android:textAlignment="center"
+        android:textColor="#0D47A1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/workoutProgramButton4"
+        android:layout_width="87dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#209C9C"
+        android:text="Workout Program"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homeButton4" />
+
+    <Button
+        android:id="@+id/homeButton4"
+        android:layout_width="85dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#209C9C"
+        android:text="Home"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/encyclopediaButton4"
+        android:layout_width="85dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#209C9C"
+        android:text="Encyclopedia"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dietPlanButton4" />
+
+    <Button
+        android:id="@+id/dietPlanButton4"
+        android:layout_width="85dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#209C9C"
+        android:text="Diet Plan"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/workoutProgramButton4" />
+
+    <TextView
+        android:id="@+id/dietPlanTermsText"
+        android:layout_width="341dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="Diet Plan - A program that helps with your dieting needs"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EncyclopediaText" />
+
+    <TextView
+        android:id="@+id/workoutProgramTermText"
+        android:layout_width="341dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Workout Program - A program set to help with your workouts"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dietPlanTermsText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
