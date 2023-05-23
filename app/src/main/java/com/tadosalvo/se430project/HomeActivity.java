@@ -13,7 +13,7 @@ public class HomeActivity extends AppCompatActivity {
     private Button workoutButton;
     private Button dietButton;
     private Button encyclopediaButton;
-
+    private Button logoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class HomeActivity extends AppCompatActivity {
         workoutButton = (Button) findViewById(R.id.workoutProgramButton);
         dietButton = (Button) findViewById(R.id.dietPlanButton);
         encyclopediaButton = (Button) findViewById(R.id.encyclopediaButton);
-
+        logoutButton = (Button) findViewById(R.id.LogoutButton);
 
         workoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +47,13 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                logoutButtonAction();
+            }
+        });
+
 
     }
 
@@ -62,6 +69,9 @@ public class HomeActivity extends AppCompatActivity {
     public void openEncyclopediaActivity() {
         Intent intent = new Intent(this, EncylopediaActivity.class);
         startActivity(intent);
+    }
+    public void logoutButtonAction() {
+        // log out button action goes here
     }
 
 

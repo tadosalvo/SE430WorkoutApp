@@ -125,4 +125,14 @@
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent" />
 
+  <Button
+      android:id="@+id/logoutButton"
+      android:layout_width="105dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="308dp"
+      android:backgroundTint="#209C9C"
+      android:text="Log Out"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
 
     private Button loginButton;
+    private Button createAccountButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         loginButton = (Button) findViewById(R.id.LoginButton);
+        createAccountButton = (Button) findViewById(R.id.CreateAccountButton);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        createAccountButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                createAccountAction();
+            }
+        });
+
+
     }
 
     public void openHomeActivity() {
@@ -49,4 +59,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void createAccountAction() {
+        // Action that occurs when create account button is pressed
+    }
 }

@@ -11,7 +11,7 @@
         android:id="@+id/loginText2"
         android:layout_width="341dp"
         android:layout_height="55dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="76dp"
         android:background="@android:color/holo_green_light"
         android:includeFontPadding="false"
         android:paddingTop="20dp"
@@ -22,6 +22,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/WorkoutSummaryButton"
+        android:layout_width="267dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/material_dynamic_neutral20"
+        android:text="Workout Summary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileButton" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="269dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/material_dynamic_neutral20"
+        android:text="Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText2" />
 
     <Button
         android:id="@+id/encyclopediaButton"
@@ -72,26 +95,12 @@
         app:layout_constraintStart_toEndOf="@+id/workoutProgramButton" />
 
     <Button
-        android:id="@+id/profileButton"
-        android:layout_width="269dp"
-        android:layout_height="93dp"
-        android:layout_marginTop="64dp"
-        android:backgroundTint="@color/material_dynamic_neutral20"
-        android:text="Profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        android:id="@+id/LogoutButton"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="308dp"
+        android:backgroundTint="#209C9C"
+        android:text="Log Out"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginText2" />
-
-    <Button
-        android:id="@+id/WorkoutSummaryButton"
-        android:layout_width="267dp"
-        android:layout_height="102dp"
-        android:layout_marginTop="26dp"
-        android:backgroundTint="@color/material_dynamic_neutral20"
-        android:text="Workout Summary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileButton" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

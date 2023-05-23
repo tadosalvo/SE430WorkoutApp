@@ -11,7 +11,7 @@
         android:id="@+id/EncyclopediaText"
         android:layout_width="341dp"
         android:layout_height="55dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="96dp"
         android:background="@android:color/holo_green_light"
         android:includeFontPadding="false"
         android:paddingTop="20dp"
@@ -22,6 +22,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/workoutProgramTermText"
+        android:layout_width="341dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="Workout Program - A program set to help with your workouts"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dietPlanTermsText" />
+
+    <TextView
+        android:id="@+id/dietPlanTermsText"
+        android:layout_width="341dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Diet Plan - A program that helps with your dieting needs"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EncyclopediaText" />
 
     <Button
         android:id="@+id/workoutProgramButton4"
@@ -71,25 +93,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/workoutProgramButton4" />
 
-    <TextView
-        android:id="@+id/dietPlanTermsText"
-        android:layout_width="341dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
-        android:text="Diet Plan - A program that helps with your dieting needs"
-        android:textColor="@color/white"
+    <Button
+        android:id="@+id/logoutButton3"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="308dp"
+        android:backgroundTint="#209C9C"
+        android:text="Log Out"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EncyclopediaText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/workoutProgramTermText"
-        android:layout_width="341dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="Workout Program - A program set to help with your workouts"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dietPlanTermsText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
