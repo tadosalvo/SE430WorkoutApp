@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class WorkoutActivity extends AppCompatActivity {
 
     private Button homeButton;
@@ -48,7 +50,8 @@ public class WorkoutActivity extends AppCompatActivity {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                logoutButtonAction();
+                FirebaseAuth.getInstance().signOut();
+                openMainActivity();
             }
         });
 
@@ -69,7 +72,8 @@ public class WorkoutActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void logoutButtonAction() {
-        // log out button action goes here
+    public void openMainActivity() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

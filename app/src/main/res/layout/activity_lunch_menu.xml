@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A5473"
+    tools:context=".LunchMenuActivity">
+
+    <TextView
+        android:id="@+id/lunchMenuText"
+        android:layout_width="341dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/holo_green_light"
+        android:includeFontPadding="false"
+        android:paddingTop="20dp"
+        android:text="Lunch Menu"
+        android:textAlignment="center"
+        android:textColor="#0D47A1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkSandwich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="Sandwich          361 cal"
+        android:textColor="@color/tan"
+        android:onClick="onLunchChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchMenuText" />
+
+    <CheckBox
+        android:id="@+id/chkSalad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Salad          200 cal"
+        android:textColor="@color/tan"
+        android:onClick="onLunchChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkSandwich" />
+
+    <CheckBox
+        android:id="@+id/chkBurger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Burger          354 cal"
+        android:textColor="@color/tan"
+        android:onClick="onLunchChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkSalad" />
+
+    <CheckBox
+        android:id="@+id/chkMeatballs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Meatballs          284 cal"
+        android:textColor="@color/tan"
+        android:onClick="onLunchChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkBurger" />
+
+    <CheckBox
+        android:id="@+id/chkBurritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Burritos          447 cal"
+        android:textColor="@color/tan"
+        android:onClick="onLunchChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkMeatballs" />
+
+    <CheckBox
+        android:id="@+id/chkSoup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Soup          73 cal"
+        android:textColor="@color/tan"
+        android:onClick="onLunchChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkBurritos" />
+
+    <Button
+        android:id="@+id/btn_lunch_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Done"
+        app:layout_constraintTop_toBottomOf="@id/chkSoup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

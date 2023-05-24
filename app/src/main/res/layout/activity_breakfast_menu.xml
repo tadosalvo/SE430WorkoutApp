@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A5473"
+    tools:context=".BreakfastMenuActivity">
+
+    <TextView
+        android:id="@+id/breakfastMenuText"
+        android:layout_width="341dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/holo_green_light"
+        android:includeFontPadding="false"
+        android:paddingTop="20dp"
+        android:text="Breakfast Menu"
+        android:textAlignment="center"
+        android:textColor="#0D47A1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkOmelet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="Omelet          94 cal"
+        android:textColor="@color/tan"
+        android:onClick="onBreakfastChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakfastMenuText" />
+
+    <CheckBox
+        android:id="@+id/chkCereal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Cereal          207 cal"
+        android:textColor="@color/tan"
+        android:onClick="onBreakfastChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkOmelet" />
+
+    <CheckBox
+        android:id="@+id/chkPorridge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Porridge          125 cal"
+        android:textColor="@color/tan"
+        android:onClick="onBreakfastChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkCereal" />
+
+    <CheckBox
+        android:id="@+id/chkFrenchToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="French Toast          149 cal"
+        android:textColor="@color/tan"
+        android:onClick="onBreakfastChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkPorridge" />
+
+    <CheckBox
+        android:id="@+id/chkBacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Bacon          207 cal"
+        android:textColor="@color/tan"
+        android:onClick="onBreakfastChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkFrenchToast" />
+
+    <CheckBox
+        android:id="@+id/chkPancake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Pancake          64 cal"
+        android:textColor="@color/tan"
+        android:onClick="onBreakfastChkBoxStatChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkBacon" />
+
+    <Button
+        android:id="@+id/btn_breakfast_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Done"
+        app:layout_constraintTop_toBottomOf="@id/chkPancake"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

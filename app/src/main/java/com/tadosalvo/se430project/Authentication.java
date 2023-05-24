@@ -32,7 +32,7 @@ public class Authentication {
                             openHomeActivity();
                         } else {
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(null, "Authentication failed.",
+                            Toast.makeText(context, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
