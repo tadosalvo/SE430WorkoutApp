@@ -13,6 +13,43 @@
         android:theme="@style/Theme.SE430Project"
         tools:targetApi="31">
         <activity
+            android:name=".CardioMenuActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CoreMenuActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UpperBodyMenuActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LowerBodyMenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_lower_body_menu"
+            android:theme="@style/Theme.SE430Project.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WorkoutPlan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".DinnerMenuActivity"
             android:exported="false" />
         <activity

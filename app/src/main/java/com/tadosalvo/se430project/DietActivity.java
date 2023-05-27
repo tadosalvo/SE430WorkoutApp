@@ -46,8 +46,8 @@ public class DietActivity extends AppCompatActivity {
         breakfastButton = findViewById(R.id.BreakfastButton);
         lunchButton = findViewById(R.id.LunchButton);
         dinnerButton = findViewById(R.id.DinnerButton);
-        breakfastItems = findViewById(R.id.lbl_Breakfast_Items);
-        breakfastCal = findViewById(R.id.lbl_Breakfast_Cal);
+        breakfastItems = findViewById(R.id.lbl_UpperBody_Items);
+        breakfastCal = findViewById(R.id.lbl_UpperBody_Cal);
         lunchItems = findViewById(R.id.lbl_Lunch_Items);
         lunchCal = findViewById(R.id.lbl_Lunch_Cal);
         dinnerItems = findViewById(R.id.lbl_Dinner_Items);

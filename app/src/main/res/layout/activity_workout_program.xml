@@ -11,7 +11,7 @@
       android:id="@+id/WorkoutProgramText"
       android:layout_width="341dp"
       android:layout_height="55dp"
-      android:layout_marginTop="48dp"
+      android:layout_marginTop="64dp"
       android:background="@android:color/holo_green_light"
       android:includeFontPadding="false"
       android:paddingTop="20dp"
@@ -75,55 +75,64 @@
 
   <Button
       android:id="@+id/lowerBodyButton"
-      android:layout_width="156dp"
-      android:layout_height="74dp"
+      android:layout_width="149dp"
+      android:layout_height="54dp"
       android:layout_marginStart="32dp"
-      android:layout_marginBottom="428dp"
+      android:layout_marginTop="21dp"
+      android:layout_marginBottom="464dp"
       android:backgroundTint="#209C9C"
       android:text="Lower Body"
       android:textColor="@color/white"
       android:textSize="10sp"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/WorkoutProgramText" />
 
   <Button
       android:id="@+id/upperBodyButton"
-      android:layout_width="163dp"
-      android:layout_height="75dp"
+      android:layout_width="158dp"
+      android:layout_height="56dp"
       android:layout_marginStart="212dp"
-      android:layout_marginBottom="428dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="444dp"
       android:backgroundTint="#209C9C"
       android:text="Upper Body"
       android:textColor="@color/white"
       android:textSize="10sp"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/WorkoutProgramText"
+      app:layout_constraintVertical_bias="0.033" />
 
   <Button
       android:id="@+id/coreStrengthButton"
-      android:layout_width="163dp"
-      android:layout_height="81dp"
+      android:layout_width="149dp"
+      android:layout_height="53dp"
       android:layout_marginStart="32dp"
-      android:layout_marginBottom="304dp"
+      android:layout_marginBottom="356dp"
       android:backgroundTint="#209C9C"
       android:text="Core Strength"
       android:textColor="@color/white"
       android:textSize="10sp"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/lowerBodyButton"
+      app:layout_constraintVertical_bias="0.357" />
 
   <Button
       android:id="@+id/cardioButton"
-      android:layout_width="164dp"
-      android:layout_height="80dp"
+      android:layout_width="152dp"
+      android:layout_height="56dp"
       android:layout_marginStart="212dp"
-      android:layout_marginBottom="304dp"
+      android:layout_marginBottom="364dp"
       android:backgroundTint="#209C9C"
       android:text="Cardio"
       android:textColor="@color/white"
       android:textSize="10sp"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/upperBodyButton"
+      app:layout_constraintVertical_bias="0.36" />
 
   <Button
       android:id="@+id/logoutButton"
@@ -134,5 +143,200 @@
       android:text="Log Out"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/CardioConstraint"
+      android:layout_width="344dp"
+      android:layout_height="60dp"
+      android:layout_marginTop="156dp"
+      android:background="#000000"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.462"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/UpperBodyConstraint">
+
+    <TextView
+        android:id="@+id/lbl_Cardio_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Cardio"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_Cardio_Items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="[]"
+        android:textColor="@color/tan"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_Cardio_Cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Cal"
+        android:textColor="@color/tan"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/UpperBodyConstraint"
+      android:layout_width="340dp"
+      android:layout_height="53dp"
+      android:layout_marginTop="288dp"
+      android:background="#000000"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.478"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/lbl_UpperBody_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Upper Body"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_UpperBody_Cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:text="Cal"
+        android:textColor="@color/tan"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_UpperBody_Items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="[]"
+        android:textColor="@color/tan"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_UpperBody_Title" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/LowerBodyConstraint"
+      android:layout_width="344dp"
+      android:layout_height="60dp"
+      android:layout_marginTop="12dp"
+      android:background="#000000"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.477"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/UpperBodyConstraint">
+
+    <TextView
+        android:id="@+id/lbl_LowerBody_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Lower Body"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_LowerBody_Items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="[]"
+        android:textColor="@color/tan"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_LowerBody_Cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Cal"
+        android:textColor="@color/tan"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/CoreConstraint"
+      android:layout_width="344dp"
+      android:layout_height="60dp"
+      android:layout_marginTop="80dp"
+      android:background="#000000"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.462"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/UpperBodyConstraint" >
+
+    <TextView
+        android:id="@+id/lbl_Core_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Core Strength"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_Core_Items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="[]"
+        android:textColor="@color/tan"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_Core_Cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Cal"
+        android:textColor="@color/tan"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

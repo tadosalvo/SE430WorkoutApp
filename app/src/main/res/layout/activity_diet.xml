@@ -138,7 +138,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/lbl_Breakfast_Title"
+                android:id="@+id/lbl_UpperBody_Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -150,7 +150,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/lbl_Breakfast_Cal"
+                android:id="@+id/lbl_UpperBody_Cal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
@@ -162,14 +162,14 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/lbl_Breakfast_Items"
+                android:id="@+id/lbl_UpperBody_Items"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="[]"
                 android:textSize="14sp"
                 android:textColor="@color/tan"
-                app:layout_constraintTop_toBottomOf="@id/lbl_Breakfast_Title"
+                app:layout_constraintTop_toBottomOf="@id/lbl_UpperBody_Title"
                 app:layout_constraintStart_toStartOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
