@@ -28,36 +28,119 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="128dp"
         android:onClick="onLowerBodyChkBoxStatChange"
         android:text="Squats          361 cal"
         android:textColor="@color/tan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/chkDeadlift"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/editTextSquatsSets"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="288dp"
-        android:onClick="onLowerBodyChkBoxStatChange"
-        android:text="Deadlift          447 cal"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Sets"
         android:textColor="@color/tan"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/chkSquats" />
+
+    <EditText
+        android:id="@+id/editTextSquatsReps"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Reps"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkSquats" />
 
     <CheckBox
         android:id="@+id/chkLunge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="268dp"
         android:onClick="onLowerBodyChkBoxStatChange"
         android:text="Lunge          73 cal"
         android:textColor="@color/tan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLungeReps"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Reps"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkSquats" />
+
+    <EditText
+        android:id="@+id/editTextLungeSets"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Sets"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkSquats" />
+
+    <CheckBox
+        android:id="@+id/chkDeadlift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="404dp"
+        android:onClick="onLowerBodyChkBoxStatChange"
+        android:text="Deadlift          447 cal"
+        android:textColor="@color/tan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDeadliftReps"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="276dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Reps"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkSquats" />
+
+    <EditText
+        android:id="@+id/editTextDeadliftSets"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="320dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Sets"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkSquats" />
 
     <Button
         android:id="@+id/btn_lower_done"
@@ -69,4 +152,5 @@
         app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

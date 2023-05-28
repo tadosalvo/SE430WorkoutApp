@@ -17,9 +17,6 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Text;
-
 import java.util.Map;
 
 public class WorkoutActivity extends AppCompatActivity {

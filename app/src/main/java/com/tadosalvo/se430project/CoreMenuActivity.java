@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
@@ -44,14 +45,59 @@ public class CoreMenuActivity extends AppCompatActivity {
         sitUp = findViewById(R.id.chkSideBridge);
         sideBridge = findViewById(R.id.chkSitUp);
 
+        TextView curlUpReps = findViewById(R.id.editTextCurlUpReps);
+        TextView curlUpSets = findViewById(R.id.editTextCurlUpSets);
+        TextView sitUpReps = findViewById(R.id.editTextSitUpReps);
+        TextView sitUpSets = findViewById(R.id.editTextSitUpSets);
+        TextView sideBridgeReps = findViewById(R.id.editTextSideBridgeReps);
+        TextView sideBrdigeSets = findViewById(R.id.editTextSideBridgeSets);
+
+
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 selectedItems = core.getItems();
                 Map<String, Object> data = new HashMap<>();
+
+                String curlUpRepsStr = curlUpReps.getText().toString();
+                if (curlUpRepsStr.equals("Enter Reps")) {
+                    curlUpRepsStr = "0";
+                }
+                String curlUpSetsStr = curlUpSets.getText().toString();
+                if (curlUpSetsStr.equals("Enter Sets")) {
+                    curlUpSetsStr = "0";
+                }
+
+                String sitUpRepsStr = sitUpReps.getText().toString();
+                if (sitUpRepsStr.equals("Enter Reps")) {
+                    sitUpRepsStr = "0";
+                }
+                String sitUpSetsStr = sitUpSets.getText().toString();
+                if (sitUpSetsStr.equals("Enter Sets")) {
+                    sitUpSetsStr = "0";
+                }
+
+                String sideBridgeRepsStr = sideBridgeReps.getText().toString();
+                if (sideBridgeRepsStr.equals("Enter Reps")) {
+                    sideBridgeRepsStr = "0";
+                }
+                String sideBridgeSetsStr = sideBrdigeSets.getText().toString();
+                if (sideBridgeSetsStr.equals("Enter Sets")) {
+                    sideBridgeSetsStr = "0";
+                }
+
+
+
                 data.put("username", mAuth.getCurrentUser().getEmail());
                 data.put("core", selectedItems);
                 data.put("core_cal", core.getTotalCal());
+                data.put("curlUpReps", curlUpRepsStr );
+                data.put("curlUpSets", curlUpSetsStr);
+                data.put("sitUpReps", sitUpRepsStr);
+                data.put("sitUpSets", sitUpSetsStr);
+                data.put("sideBridgeReps", sideBridgeRepsStr);
+                data.put("sideBridgeSets", sideBridgeSetsStr);
+
                 users.document(mAuth.getCurrentUser().getUid()).set(data, SetOptions.merge());
                 openWorkoutActivity();
             }

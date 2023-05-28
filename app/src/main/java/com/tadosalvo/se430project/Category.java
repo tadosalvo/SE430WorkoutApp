@@ -8,11 +8,11 @@ import android.view.View;
 import android.widget.Button;
 
 public class Category {
-    private List<Term> terms;
-    public Term() {
-        ArrayList terms = new ArrayList();
-    }
-    
+//    private List<Term> terms;
+//    public Term() {
+//        ArrayList terms = new ArrayList();
+//    }
+//
 
 
 }

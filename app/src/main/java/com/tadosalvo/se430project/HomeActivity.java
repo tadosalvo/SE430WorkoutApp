@@ -16,6 +16,7 @@ public class HomeActivity extends AppCompatActivity {
     private Button dietButton;
     private Button encyclopediaButton;
     private Button logoutButton;
+    private Button workoutSummaryButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,16 @@ public class HomeActivity extends AppCompatActivity {
         dietButton = (Button) findViewById(R.id.dietPlanButton);
         encyclopediaButton = (Button) findViewById(R.id.encyclopediaButton);
         logoutButton = (Button) findViewById(R.id.LogoutButton);
+        workoutSummaryButton = (Button) findViewById(R.id.WorkoutSummaryButton);
+
+
+        workoutSummaryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openWorkoutSummaryActivity();
+            }
+        });
+
 
         workoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +70,10 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    public void openWorkoutSummaryActivity() {
+        Intent intent = new Intent(this, WorkoutSummary.class);
+        startActivity(intent);
+    }
 
     public void openWorkoutActivity() {
         Intent intent = new Intent(this, WorkoutActivity.class);

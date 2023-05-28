@@ -7,6 +7,90 @@
     android:background="#1A5473"
     tools:context=".CardioMenuActivity">
 
+    <EditText
+        android:id="@+id/editTextRunReps"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Reps"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRunSets"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="216dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Sets"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRowsReps"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="312dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Reps"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRowsSets"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="360dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Sets"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCyclingReps"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="456dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Reps"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCyclingSets"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="504dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Sets"
+        android:textColor="@color/tan"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/cardioMenuText"
         android:layout_width="341dp"
@@ -15,7 +99,7 @@
         android:background="@android:color/holo_green_light"
         android:includeFontPadding="false"
         android:paddingTop="20dp"
-        android:text="Core Menu"
+        android:text="Cardio"
         android:textAlignment="center"
         android:textColor="#0D47A1"
         android:textSize="16sp"
@@ -28,7 +112,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="120dp"
         android:onClick="onCardioChkBoxStatChange"
         android:text="Run          361 cal"
         android:textColor="@color/tan"
@@ -40,7 +124,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="288dp"
+        android:layout_marginTop="408dp"
         android:onClick="onCardioChkBoxStatChange"
         android:text="Cycling          447 cal"
         android:textColor="@color/tan"
@@ -52,7 +136,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="264dp"
         android:onClick="onCardioChkBoxStatChange"
         android:text="Rows          73 cal"
         android:textColor="@color/tan"

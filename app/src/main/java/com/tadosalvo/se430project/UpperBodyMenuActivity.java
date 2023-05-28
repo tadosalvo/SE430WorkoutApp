@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.SetOptions;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -44,14 +47,60 @@ public class UpperBodyMenuActivity extends AppCompatActivity {
         benchPress = findViewById(R.id.chkBenchPress);
         pushUp = findViewById(R.id.chkPushup);
 
+        TextView overHeadPressReps = findViewById(R.id.editTextOverheadPressReps);
+        TextView overHeadPressSets = findViewById(R.id.editTextOverheadPressSets);
+        TextView benchPressReps = findViewById(R.id.editTextBenchPressReps);
+        TextView benchPressSets = findViewById(R.id.editTextBenchPressSets);
+        TextView pushUpReps = findViewById(R.id.editTextPushUpReps);
+        TextView pushUpSets = findViewById(R.id.editTextPushUpSets);
+
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 selectedItems = upperBody.getItems();
                 Map<String, Object> data = new HashMap<>();
+
+                String overHeadPressRepsStr = overHeadPressReps.getText().toString();
+                if (overHeadPressRepsStr.equals("Enter Reps")) {
+                    overHeadPressRepsStr = "0";
+                }
+                String overHeadPressSetsStr = overHeadPressSets.getText().toString();
+                if (overHeadPressSetsStr.equals("Enter Sets")) {
+                    overHeadPressSetsStr = "0";
+                }
+
+
+                String benchPressRepsStr = benchPressReps.getText().toString();
+                if (benchPressRepsStr.equals("Enter Reps")) {
+                    benchPressRepsStr = "0";
+                }
+                String benchPressSetsStr = benchPressSets.getText().toString();
+                if (benchPressSetsStr.equals("Enter Sets")) {
+                    benchPressSetsStr = "0";
+                }
+
+
+                String pushUpRepsStr = pushUpReps.getText().toString();
+                if (pushUpRepsStr.equals("Enter Reps")) {
+                    pushUpRepsStr = "0";
+                }
+                String pushUpSetsStr = pushUpSets.getText().toString();
+                if (pushUpSetsStr.equals("Enter Sets")) {
+                    pushUpSetsStr = "0";
+                }
+
+
                 data.put("username", mAuth.getCurrentUser().getEmail());
                 data.put("upperBody", selectedItems);
                 data.put("upperBody_cal", upperBody.getTotalCal());
+                data.put("overheadPressReps", overHeadPressRepsStr);
+                data.put("overheadPressSets", overHeadPressSetsStr);
+                data.put("benchPressReps", benchPressRepsStr);
+                data.put("benchPressSets", benchPressSetsStr);
+                data.put("pushUpReps", pushUpRepsStr);
+                data.put("pushUpSets", pushUpSetsStr);
+
+
                 users.document(mAuth.getCurrentUser().getUid()).set(data, SetOptions.merge());
                 openWorkoutActivity();
             }

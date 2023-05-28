@@ -10,11 +10,11 @@ import android.widget.Button;
 public class Contact {
 
 
-    public void Categories {
-
-    }
-
-    public void Terms {
-
-    }
+//    public void Categories {
+//
+//    }
+//
+//    public void Terms {
+//
+//    }
 }

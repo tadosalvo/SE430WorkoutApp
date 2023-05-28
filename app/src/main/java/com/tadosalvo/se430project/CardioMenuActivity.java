@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.SetOptions;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,14 +46,55 @@ public class CardioMenuActivity extends AppCompatActivity {
         rows = findViewById(R.id.chkRows);
         cycling = findViewById(R.id.chkCyclingTime);
 
+        TextView runReps = findViewById(R.id.editTextRunReps);
+        TextView runSets = findViewById(R.id.editTextRunSets);
+        TextView rowsReps = findViewById(R.id.editTextRowsReps);
+        TextView rowsSets = findViewById(R.id.editTextRowsSets);
+        TextView cyclingReps = findViewById(R.id.editTextCyclingReps);
+        TextView cyclingSets = findViewById(R.id.editTextCyclingSets);
+
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 selectedItems = cardio.getItems();
                 Map<String, Object> data = new HashMap<>();
+
+                String runRepsStr = runReps.getText().toString();
+                if (runRepsStr.equals("Enter Reps")) {
+                    runRepsStr = "0";
+                }
+                String runSetsStr = runSets.getText().toString();
+                if (runSetsStr.equals("Enter Sets")) {
+                    runSetsStr = "0";
+                }
+                String rowsRepsStr = rowsReps.getText().toString();
+                if (rowsRepsStr.equals("Enter Reps")) {
+                    rowsRepsStr = "0";
+                }
+                String rowsSetsStr = rowsSets.getText().toString();
+                if (rowsSetsStr.equals("Enter Sets")) {
+                    rowsSetsStr = "0";
+                }
+                String cyclingRepsStr = cyclingReps.getText().toString();
+                if (cyclingRepsStr.equals("Enter Reps")) {
+                    cyclingRepsStr = "0";
+                }
+                String cyclingSetsStr = cyclingSets.getText().toString();
+                if (cyclingSetsStr.equals("Enter Sets")) {
+                    cyclingSetsStr = "0";
+                }
+
+
                 data.put("username", mAuth.getCurrentUser().getEmail());
                 data.put("cardio", selectedItems);
                 data.put("cardio_cal", cardio.getTotalCal());
+                data.put("runReps", runRepsStr );
+                data.put("runSets", runSetsStr);
+                data.put("rowsReps", rowsRepsStr);
+                data.put("rowsSets", rowsSetsStr);
+                data.put("cyclingReps", cyclingRepsStr);
+                data.put("cyclingSets", cyclingSetsStr);
+
                 users.document(mAuth.getCurrentUser().getUid()).set(data, SetOptions.merge());
                 openWorkoutActivity();
             }
