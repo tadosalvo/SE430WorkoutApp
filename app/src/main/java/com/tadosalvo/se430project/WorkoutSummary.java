@@ -204,7 +204,7 @@ public class WorkoutSummary extends AppCompatActivity {
                             sitUpSets.setText(data.get("sitUpSets").toString());
                         }
                         if(document.contains("sideBridgeReps")) {
-                            sideBridgeReps.setText(data.get("curlUpReps").toString());
+                            sideBridgeReps.setText(data.get("sideBridgeReps").toString());
                         }
                         if(document.contains("sideBridgeSets")) {
                             sideBridgeSets.setText(data.get("sideBridgeSets").toString());
