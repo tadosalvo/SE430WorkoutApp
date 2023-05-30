@@ -79,12 +79,10 @@
       android:layout_height="54dp"
       android:layout_marginStart="32dp"
       android:layout_marginTop="21dp"
-      android:layout_marginBottom="464dp"
       android:backgroundTint="#209C9C"
       android:text="Lower Body"
       android:textColor="@color/white"
       android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/WorkoutProgramText" />
 
@@ -94,45 +92,38 @@
       android:layout_height="56dp"
       android:layout_marginStart="212dp"
       android:layout_marginTop="20dp"
-      android:layout_marginBottom="444dp"
       android:backgroundTint="#209C9C"
       android:text="Upper Body"
       android:textColor="@color/white"
       android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/WorkoutProgramText"
-      app:layout_constraintVertical_bias="0.033" />
+      app:layout_constraintTop_toBottomOf="@+id/WorkoutProgramText" />
 
   <Button
       android:id="@+id/coreStrengthButton"
       android:layout_width="149dp"
       android:layout_height="53dp"
       android:layout_marginStart="32dp"
-      android:layout_marginBottom="356dp"
+      android:layout_marginTop="8dp"
       android:backgroundTint="#209C9C"
       android:text="Core Strength"
       android:textColor="@color/white"
       android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/lowerBodyButton"
-      app:layout_constraintVertical_bias="0.357" />
+      app:layout_constraintTop_toBottomOf="@+id/lowerBodyButton" />
 
   <Button
       android:id="@+id/cardioButton"
       android:layout_width="152dp"
       android:layout_height="56dp"
-      android:layout_marginStart="212dp"
-      android:layout_marginBottom="364dp"
+      android:layout_marginStart="216dp"
+      android:layout_marginTop="4dp"
       android:backgroundTint="#209C9C"
       android:text="Cardio"
       android:textColor="@color/white"
       android:textSize="10sp"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/upperBodyButton"
-      app:layout_constraintVertical_bias="0.36" />
+      app:layout_constraintTop_toBottomOf="@+id/upperBodyButton" />
 
   <Button
       android:id="@+id/logoutButton"
