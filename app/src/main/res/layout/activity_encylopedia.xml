@@ -23,28 +23,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/workoutProgramTermText"
-        android:layout_width="341dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
-        android:text="Workout Program - A program set to help with your workouts"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dietPlanTermsText" />
-
-    <TextView
-        android:id="@+id/dietPlanTermsText"
-        android:layout_width="341dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:text="Diet Plan - A program that helps with your dieting needs"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EncyclopediaText" />
-
     <Button
         android:id="@+id/workoutProgramButton4"
         android:layout_width="87dp"
@@ -102,5 +80,15 @@
         android:text="Log Out"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/EncyclopediaText"
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

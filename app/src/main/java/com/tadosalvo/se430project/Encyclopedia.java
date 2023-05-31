@@ -1,32 +1,27 @@
 package com.tadosalvo.se430project;
 
-import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
-import java.util.List;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
-
 
 public class Encyclopedia {
-    private List<Term> entered;
+
+    private ArrayList<Term> terms = new ArrayList<>();
 
     public Encyclopedia() {
-        this.entered = new ArrayList<>();
+        setTerms();
     }
 
-    public void addTerm(Term enter) {
-        entered.add(enter);
+    private void setTerms(){
+        Term term1 = new Term("Diet Plan", "A program that helps with your dieting needs");
+        Term term2 = new Term("Workout Program", "A program set to help with your workouts");
+        Term term3 = new Term("Weightlifting", "Weightlifting is one of the key ways to build upper body strength.");
+        Term term4 = new Term("Cardio", "Cardio is important for improving the flow of oxygen throughout your body.");
+        terms.add(term1);
+        terms.add(term2);
+        terms.add(term3);
+        terms.add(term4);
     }
 
-    public Term getEnterByTerm(String term) {
-        for (Term enter : entered) {
-            if (enter.getTerm().equalsIgnoreCase(term)) {
-                return enter;
-            }
-        }
-        return null; // If what's entered isn't found
+    public ArrayList<Term> getEncyclopedia(){
+        return terms;
     }
 }
